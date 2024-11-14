@@ -1,13 +1,11 @@
-class User {
-    constructor(name, email, password) {
+class Aluno {
+    constructor(name, status, online) {
         this.id = this.generateID();
         this.name = name;
-        this.email = email;
-        this.password = password;
+        this.status = status;
+        this.online = online;
     }
     generateID() {
         return Math.floor(Math.random() * 999) + 1;
     }
 }
-
-export default User;
